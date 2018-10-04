@@ -11,7 +11,7 @@ while (i>=0){
      
      //running a finite loop to check if the perfect square nunber is also the sum of first n natural numbers
      int k=0;
-     while(k<=x){
+     while(x>=k*(k+1)/2){
           if (x==(k*(k+1))/2){
           //sum of first n natural numbers=(n*(n+1))/2
                cout<<x<<endl;}
