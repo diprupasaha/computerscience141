@@ -18,8 +18,26 @@ void merge(int arr1[],int n1, int arr2[], int n2, int a[]){
     for (int i=0; i<(n1+n2);i++){
         cout<<a[i]<<" ";
     }
+    cout<<endl;
 }
+
+//function to find largest element
+void largest(int arr[],int len){
+    int large=arr[0];
+    for (int i=1;i<len;i++){
+        if (arr[i]>large){
+            large = arr[i];}}
+    cout<<large<<" is the largest element of the array"<<endl;}
+
+//function to find smallest element   
+void smallest(int arr[],int len){
+    int small=arr[0];
+    for (int i=1;i<len;i++){
+        if (arr[i]<small){
+            small = arr[i];}}
+    cout<<small<<" is the smallest element of the array"<<endl;}
     
+ 
 //main
 int main(){
         
@@ -67,5 +85,7 @@ int main(){
     //merged array
     int a[n1+n2];
     merge(arr1,n1,arr2,n2,a);
+    largest(a,n1+n2);
+    smallest(a,n1+n2);
     return 7;
 }
