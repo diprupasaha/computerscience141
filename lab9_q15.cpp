@@ -7,8 +7,7 @@ using namespace std;
 int main(){
 	//declaring the string variables and its pointer
 	char str[20], *p;
-	int l=sizeof(str);
-	cout<<l;
+	
 	//taking input of string
 	cout<< "Input about 10 characters of string : ";
 	cin>>str;
